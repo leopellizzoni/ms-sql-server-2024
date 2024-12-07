@@ -21,3 +21,4 @@ https://sou.ucs.br/extensao/detalhes/microsoft-sql-server-EXT034905/
 * Conectar em localhost,1434 
 * Usuário: sa
 * Senha: Senha#UmDoisTres
+* https://portal.azure.com/ [ Exemplo do banco online via nuvem ]
