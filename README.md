@@ -16,3 +16,9 @@ https://sou.ucs.br/extensao/detalhes/microsoft-sql-server-EXT034905/
 * Conectar em localhost,1434 
 * Usuário: sa
 * Senha: Senha#UmDoisTres
+
+### Partes práticas
+* https://github.com/leopellizzoni/ms-sql-server-2024/issues/1
+* Resposta: https://github.com/leopellizzoni/ms-sql-server-2024/blob/main/encontro2/respostaPartePratica1.sql
+* https://github.com/leopellizzoni/ms-sql-server-2024/issues/2
+* Resposta: https://github.com/leopellizzoni/ms-sql-server-2024/blob/main/encontro4/respostaPartePratica2.sql
