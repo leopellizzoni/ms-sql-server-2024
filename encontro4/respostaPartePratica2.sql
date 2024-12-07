@@ -42,6 +42,21 @@ SELECT Funcionarios.Nome, Projetos.NomeProjeto
 FROM Funcionarios
 RIGHT JOIN Projetos ON Funcionarios.FuncionarioID = Projetos.FuncionarioID;
 
+-- Resposta 1.3: RIGHT JOIN - VERSÃO ALTERNATIVA MAS SEM O RIGHT JOIN
+-- PRIORIDADE FICOU NO FUNCIONARIOS, POR CAUSA DO RIGHT JOIN
+-- VERSÃO DE EXEMPLO EM AULA
+SELECT Funcionarios.Nome, Projetos.NomeProjeto
+FROM Projetos
+RIGHT JOIN Funcionarios ON Funcionarios.FuncionarioID = Projetos.FuncionarioID;
+
+SELECT Funcionarios.Nome, Projetos.NomeProjeto
+FROM Projetos
+LEFT JOIN Funcionarios ON Funcionarios.FuncionarioID = Projetos.FuncionarioID;
+
+SELECT Funcionarios.Nome, Projetos.NomeProjeto
+FROM Projetos
+INNER JOIN Funcionarios ON Funcionarios.FuncionarioID = Projetos.FuncionarioID;
+
 -- ***************************************************************
 -- Exercício 2: Clientes e pedidos
 -- ***************************************************************
@@ -112,6 +127,10 @@ INSERT INTO Professores (ProfessorID, Nome, Departamento) VALUES
 INSERT INTO Disciplinas (DisciplinaID, ProfessorID, NomeDisciplina) VALUES
 (1, 1, 'Matemática'),
 (2, 2, 'Física');
+
+SELECT * FROM Professores
+
+SELECT * FROM Disciplinas
 
 -- Resposta 3.1: INNER JOIN
 SELECT Professores.Nome, Disciplinas.NomeDisciplina
