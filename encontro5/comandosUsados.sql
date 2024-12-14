@@ -82,3 +82,24 @@ select * from Funcionarios
 
 --aqui gerou custo de cpu, leitura, escrita 
 insert into Funcionarios values (10, 'comando novo agora', 29)
+
+
+create view VWFUNCPROJ as (
+	SELECT Funcionarios.Nome, Projetos.NomeProjeto
+	FROM Projetos
+	RIGHT JOIN Funcionarios ON Funcionarios.FuncionarioID = Projetos.FuncionarioID
+)
+
+select * from VWFUNCPROJ
+
+--ESTRUTURALMENTE O COMANDO ESTA CORRETO. 
+--NA EXECUÇÃO VAI GERAR ERRO
+INSERT INTO VWFUNCPROJ VALUES ('CARLOS PELA VIEW', 'PROJETO PELA VIEW')
+
+
+CREATE VIEW VWNOMEDAVIEW AS (
+	--COMANDOSSQL
+)
+
+
+
